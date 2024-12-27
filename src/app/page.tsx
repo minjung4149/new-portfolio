@@ -16,6 +16,9 @@ export default function Home() {
             {/*<button className="orange" onClick="window.open('http://kirakira4149.dothome.co.kr/resume_minjung.pdf')">이력서*/}
             {/*  바로가기*/}
             {/*</button>*/}
+            <button className="orange">이력서
+              바로가기
+            </button>
           </div>
 
           <div className="mobile_menu">
@@ -37,6 +40,7 @@ export default function Home() {
               {/*        onClick="window.open('http://kirakira4149.dothome.co.kr/resume_minjung.pdf')">이력서*/}
               {/*  바로가기*/}
               {/*</button>*/}
+              <button className="orange">이력서 바로가기</button>
             </div>
           </div>
         </div>
@@ -954,6 +958,9 @@ export default function Home() {
               {/*<button className="white" onClick="window.open('https://github.com/minjung4149')">*/}
               {/*  깃허브 바로가기*/}
               {/*</button>*/}
+
+              <button className="orange">이력서 바로가기</button>
+              <button className="white">깃허브 바로가기</button>
             </div>
           </div>
         </section>

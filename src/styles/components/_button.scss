@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+/* 링크 버튼의 스타일 */
+button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 5px 20px rgba(252, 85, 15, 0.63);
+  cursor: pointer;
+
+  &.orange {
+    color: $font-white;
+    background: $bg-orange;
+  }
+
+  &.white {
+    color: $font-orange;
+    background: $bg-white;
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-color: $bg-white;
+  display: inline-block;
+  border-radius: 50%;
+  right: 4%;
+  bottom: 50px;
+  z-index: 99;
+  cursor: pointer;
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+}
