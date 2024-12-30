@@ -1,4 +1,6 @@
 import Header from "@/components/header/Header";
+import Category from "@/components/Category";
+import BackToTopButton from "@/components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -43,11 +45,7 @@ export default function Home() {
 
 
         <section id="ability_point">
-          <div className="category_bar">
-            <div className="container">
-              <h2>핵심역량</h2>
-            </div>
-          </div>
+          <Category title="핵심역량"/>
           <div className="container">
             <div className="contents">
               <ul className="active">
@@ -93,7 +91,6 @@ export default function Home() {
           </div>
         </section>
 
-
         <section id="skill">
           <div className="container">
             <div className="skill_wrapper">
@@ -104,7 +101,7 @@ export default function Home() {
                   활용능력
                 </h2>
                 <p className="strong point">
-                  HTML 태그를 알맞게 사용하여 콘텐츠를 의미 있는 태그로 구조화합니다.<br/>
+                  HTML 태그를 알맞게 사용하여 <mark>콘텐츠를 의미 있는 태그로 구조화</mark>합니다.<br/>
                   각종 라이브러리를 유연하게 활용하여 완성도를 높이고,
                   협업 툴 활용으로 체계적이고 유연하게 프로젝트를 완성합니다.
                 </p>
@@ -135,7 +132,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -145,10 +141,8 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </li>
-
 
                 <li className="card">
                   <div className="card_contents">
@@ -173,7 +167,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -188,10 +181,8 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </li>
-
 
                 <li className="card">
                   <div className="card_contents">
@@ -211,7 +202,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -242,7 +232,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -252,7 +241,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </li>
 
@@ -273,7 +261,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -306,7 +293,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -348,7 +334,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -367,7 +352,6 @@ export default function Home() {
                   </div>
                 </li>
 
-
                 <li className="card">
                   <div className="card_contents">
                     <div className="side">
@@ -382,7 +366,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -395,7 +378,6 @@ export default function Home() {
 
                   </div>
                 </li>
-
 
                 <li className="card">
                   <div className="card_contents">
@@ -423,7 +405,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -436,7 +417,6 @@ export default function Home() {
 
                   </div>
                 </li>
-
 
                 <li className="card">
                   <div className="card_contents">
@@ -476,7 +456,6 @@ export default function Home() {
                   </div>
                 </li>
 
-
                 <li className="card">
                   <div className="card_contents">
                     <div className="side">
@@ -496,7 +475,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -529,7 +507,6 @@ export default function Home() {
                         <p>배움은 계속됩니다.</p>
                       </div>
                     </div>
-
                     <div className="side back">
                       <div className="a_center">
                         <div className="center_icon">
@@ -539,10 +516,8 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -550,11 +525,7 @@ export default function Home() {
 
 
         <section className="preview" id="project">
-          <div className="category_bar">
-            <div className="container">
-              <h2>Project</h2>
-            </div>
-          </div>
+          <Category title="Project"/>
           <div className="work_wrapper common">
             <div className="div split">
               <div className="project">
@@ -776,11 +747,7 @@ export default function Home() {
 
 
         <section id="ability_basic">
-          <div className="category_bar">
-            <div className="container">
-              <h2>역량</h2>
-            </div>
-          </div>
+          <Category title="업무수행역량"/>
           <div className="ability_basic_wrapper">
             <div className="container">
               <ul>
@@ -924,9 +891,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="back-to-top">
-          <div id="lottie-pop"></div>
-        </div>
+        <BackToTopButton/>
       </main>
     </>
   );
