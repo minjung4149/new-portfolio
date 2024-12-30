@@ -17,6 +17,7 @@ header {
       }
     }
 
+    /* 메뉴 */
     .gnb_bar {
       @include flex-j-a-center;
 
@@ -43,7 +44,7 @@ header {
     }
   }
 
-  // 모바일 메뉴
+  /* 햄버거 메뉴 */
   .mobile_menu {
     position: relative;
     right: 6px;
@@ -140,6 +141,7 @@ header {
     }
   }
 
+  /* 모바일 메뉴 */
   .mobile_nav {
     position: absolute;
     top: 83px;

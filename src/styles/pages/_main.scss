@@ -4,6 +4,7 @@
 
 
 section {
+  // 구분
   .category_bar {
     padding: 16px 0;
     border-top: $line;
@@ -14,6 +15,7 @@ section {
     }
   }
 
+  // 메인 소개 섹션
   &#introduce {
     height: 734px;
     margin-top: 76px;
@@ -116,6 +118,7 @@ section {
     }
   }
 
+  // 핵심 역량
   &#ability_point {
     .contents {
       padding: 90px 150px;
@@ -188,6 +191,7 @@ section {
     }
   }
 
+  // 기술 스택
   &#skill {
     border-top: $line;
     padding: 120px 0;
@@ -328,6 +332,7 @@ section {
     }
   }
 
+  // 프로젝트
   &.preview {
     .common {
       height: 900px;
@@ -435,6 +440,7 @@ section {
     }
   }
 
+  // 업무 수행 역량
   &#ability_basic {
     .ability_basic_wrapper {
       padding: 100px 0;
@@ -505,6 +511,7 @@ section {
     }
   }
 
+  // 컨텍
   &#contact {
     padding: 80px 100px;
 

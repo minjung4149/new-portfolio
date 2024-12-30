@@ -42,7 +42,7 @@ p.strong {
   @include font-variable($font-weight: $medium);
 }
 
-/*레이아웃*/
+/* 레이아웃 */
 .site {
   min-height: 100vh;
   @include flex-column;
@@ -80,7 +80,7 @@ p.strong {
 }
 
 
-/*이미지*/
+/* 이미지 */
 img {
   @include width-100;
 }
