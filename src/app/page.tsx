@@ -1,52 +1,11 @@
+import Header from "@/components/header/Header";
+
 export default function Home() {
   return (
     <>
-      <header>
-        <div className="header_wrapper">
-          <h2><a href="http://kirakira4149.dothome.co.kr/seo">Seo Min Jung</a></h2>
-          <div className="gnb_bar">
-            <nav>
-              <ul>
-                <li className="on">About</li>
-                <li>Skill</li>
-                <li>Work</li>
-                <li>Contact</li>
-              </ul>
-            </nav>
-            {/*<button className="orange" onClick="window.open('http://kirakira4149.dothome.co.kr/resume_minjung.pdf')">이력서*/}
-            {/*  바로가기*/}
-            {/*</button>*/}
-            <button className="orange">이력서
-              바로가기
-            </button>
-          </div>
-
-          <div className="mobile_menu">
-            <a href="#" className="menu effect">
-              <span></span>
-            </a>
-          </div>
-          <div className="mobile_nav">
-            <ul>
-              <li className="on">
-                <a href="#introduce">About</a>
-              </li>
-              <li><a href="#skill">skill</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-            <div className="btn_area">
-              {/*<button className="orange"*/}
-              {/*        onClick="window.open('http://kirakira4149.dothome.co.kr/resume_minjung.pdf')">이력서*/}
-              {/*  바로가기*/}
-              {/*</button>*/}
-              <button className="orange">이력서 바로가기</button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header/>
       <main>
-        <section id="introduce">
+        <section id="about">
           <div className="main_wrapper">
             <div className="about_me">
               <div className="wrapper">
@@ -91,7 +50,7 @@ export default function Home() {
           </div>
           <div className="container">
             <div className="contents">
-              <ul>
+              <ul className="active">
                 <li className="animation">
                   <div className="icon">
                     <img src="/images/ability_communication.png" alt="커뮤니케이션 능력"/>
@@ -590,17 +549,17 @@ export default function Home() {
         </section>
 
 
-        <section className="preview" id="work">
+        <section className="preview" id="project">
           <div className="category_bar">
             <div className="container">
-              <h2>Work</h2>
+              <h2>Project</h2>
             </div>
           </div>
           <div className="work_wrapper common">
             <div className="div split">
               <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/solution01.png" alt="자사 솔루션"/>
+                  <img src="/images/project/solution01.png" alt="자사 솔루션"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -622,7 +581,7 @@ export default function Home() {
               </div>
               <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/solution02.png" alt="자사 솔루션"/>
+                  <img src="/images/project/solution02.png" alt="자사 솔루션"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -648,7 +607,7 @@ export default function Home() {
             <div className="div split">
               <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/solution01_h.png" alt="자사 솔루션 홈페이지"/>
+                  <img src="/images/project/solution01_h.png" alt="자사 솔루션 홈페이지"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -668,9 +627,9 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className=" project">
+              <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/solution02_h.png" alt="자사 소루션 홈페이지"/>
+                  <img src="/images/project/solution02_h.png" alt="자사 소루션 홈페이지"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -693,9 +652,9 @@ export default function Home() {
 
 
             <div className="div split">
-              <div className=" project">
+              <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/report.png" alt="chart 리포트"/>
+                  <img src="/images/project/report.png" alt="chart 리포트"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -714,9 +673,9 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className=" project">
+              <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/reservation.png" alt="회의실 예약 시스템"/>
+                  <img src="/images/project/reservation.png" alt="회의실 예약 시스템"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -751,7 +710,7 @@ export default function Home() {
             <div className="div split">
               <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/map.png" alt="map"/>
+                  <img src="/images/project/map.png" alt="map"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -759,7 +718,7 @@ export default function Home() {
                     <div className="tt_line f_b_c">
                       <h3>map-지도 API</h3>
                       <div className="onclick_icon">
-                        <img src="/images/onclick.svg" alt="work,portfolio 보기, 클릭시 새창열림"/>
+                        <img src="/images/onclick.svg" alt="project 보기, 클릭시 새창열림"/>
                       </div>
                     </div>
                     <p className="desc">
@@ -772,7 +731,7 @@ export default function Home() {
               </div>
               <div className="project">
                 <div className="img_wrap">
-                  <img src="/images/work/list.png" alt="게시판"/>
+                  <img src="/images/project/list.png" alt="게시판"/>
                 </div>
                 <div className="project_desc">
                   <div className="gradient_bg"></div>
@@ -780,7 +739,7 @@ export default function Home() {
                     <div className="tt_line f_b_c">
                       <h3>게시판&#40;준비 중&#41;</h3>
                       <div className="onclick_icon">
-                        <img src="/images/onclick.svg" alt="work,portfolio 보기, 클릭시 새창열림"/>
+                        <img src="/images/onclick.svg" alt="project 보기, 클릭시 새창열림"/>
                       </div>
                     </div>
                     <p className="desc">
@@ -793,7 +752,7 @@ export default function Home() {
             </div>
             <div className="div project">
               <div className="img_wrap">
-                <img src="/images/work/chart.png" alt="chart"/>
+                <img src="/images/project/chart.png" alt="chart"/>
               </div>
               <div className="project_desc">
                 <div className="gradient_bg"></div>
@@ -801,7 +760,7 @@ export default function Home() {
                   <div className="tt_line f_b_c">
                     <h3>chart 모음</h3>
                     <div className="onclick_icon">
-                      <img src="/images/onclick.svg" alt="work,portfolio 보기, 클릭시 새창열림"/>
+                      <img src="/images/onclick.svg" alt="project 보기, 클릭시 새창열림"/>
                     </div>
                   </div>
                   <p className="desc">

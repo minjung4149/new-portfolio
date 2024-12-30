@@ -144,7 +144,7 @@ header {
   /* 모바일 메뉴 */
   .mobile_nav {
     position: absolute;
-    top: 83px;
+    top: 79px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -162,19 +162,15 @@ header {
         text-align: center;
         position: relative;
         cursor: pointer;
-
-        a {
-          @include width-100();
-          @include font-variable($font-xxl, $bold);
-          line-height: 56px;
-          color: $font-basic;
-          display: inline-block;
-        }
+        @include width-100();
+        @include font-variable($font-xxl, $bold);
+        color: $font-basic;
+        display: inline-block;
+        line-height: 56px;
+        box-sizing: border-box;
 
         &.on {
-          a {
-            color: $font-primary;
-          }
+          color: $font-primary;
         }
       }
     }
