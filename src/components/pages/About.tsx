@@ -20,6 +20,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="about_me_sub">
           <div className="wrapper">
             <div className="symbol"></div>
@@ -27,7 +28,8 @@ const About = () => {
             <div className="point">
               <p className="strong">
                 “Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows
-                where you live.” - Martin Golding</p>
+                where you live.” - Martin Golding
+              </p>
               <p className="strong">“항상 이런 생각으로 개발에 임하라. 내 코드를 유지 보수할 개발자는 싸이코패스일 거다. 그리고 아마 내가 어디 사는지 알고 싶어 하겠지.” -
                 Martin
                 Golding</p>
