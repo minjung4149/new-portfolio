@@ -1,0 +1,177 @@
+[
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_html.png",
+        "alt": "HTML"
+      }
+    ],
+    "skillName": "HTML",
+    "descriptions": [
+      "웹 표준, 웹 접근성, 웹 호환성을 고려한 코딩",
+      "시맨틱 태그를 사용하여 콘텐츠를 의미 있는 태그로 구조화, 의미 있는 마크업",
+      "meta 태그를 이용한 오픈그래프 작성"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_css.png",
+        "alt": "css"
+      },
+      {
+        "src": "/images/skill/icon_sass.png",
+        "alt": "scss"
+      }
+    ],
+    "skillName": "CSS / SASS(SCSS)",
+    "descriptions": [
+      "애니메이션을 활용한 인터랙션 구현",
+      "미디어쿼리를 사용한 적응형, 반응형 웹페이지 제작"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_jquery.png",
+        "alt": "jquery"
+      }
+    ],
+    "skillName": "Jquery",
+    "descriptions": [
+      "click event, scroll event, slider, toggleClass, value 값 가져오기 등, 웹 퍼블리싱에 필요한 전반적인 jquery 활용"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_js.png",
+        "alt": "javascript"
+      }
+    ],
+    "skillName": "Javascript",
+    "descriptions": [
+      "선택자, this, If문, for문 등 javascript에서 자주 쓰이는 기본적인 문법 활용"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_react.png",
+        "alt": "react"
+      }
+    ],
+    "skillName": "React",
+    "descriptions": [
+      "컴포넌트 분리, Router, useState, useEffect, useRef 등의 기초적인 지식 보유 및 활용"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_photoshop.png",
+        "alt": "photoshop"
+      },
+      {
+        "src": "/images/skill/icon_figma.png",
+        "alt": "figma"
+      }
+    ],
+    "skillName": "Photoshop / Figma",
+    "descriptions": [
+      "편집 툴을 이용한 심플한 페이지 디자인"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_github.png",
+        "alt": "github"
+      },
+      {
+        "src": "/images/skill/icon_jira.png",
+        "alt": "jira"
+      }
+    ],
+    "skillName": "GitHub / Jira",
+    "descriptions": [
+      "형상관리 툴을 이용한 버전관리",
+      "프로젝트 관리"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_chartjs.png",
+        "alt": "chart.js"
+      }
+    ],
+    "skillName": "Chart.js",
+    "descriptions": [
+      "커스터마이징 한 디자인으로 차트 구현"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_navermap.png",
+        "alt": "naver map"
+      }
+    ],
+    "skillName": "네이버 지도 API",
+    "descriptions": [
+      "행정구역 GeoJSON 데이터 레이어 표시",
+      "열지도 시각화",
+      "마커 커스터마이징",
+      "클릭이벤트"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_s_black.png",
+        "alt": "slick"
+      },
+      {
+        "src": "/images/skill/icon_s_black.png",
+        "alt": "swiper"
+      }
+    ],
+    "skillName": "slick / swiper 라이브러리",
+    "descriptions": [
+      "커스터마이징 한 디자인으로 슬라이더 구현"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/skill/icon_r_black.png",
+        "alt": "robots"
+      },
+      {
+        "src": "/images/skill/icon_sitemap.png",
+        "alt": "sitemap"
+      }
+    ],
+    "skillName": "Robots.txt / Sitemap.xml",
+    "descriptions": [
+      "Robots.txt,Sitemap.xml 제작 및 제출"
+    ]
+  },
+  {
+    "icons": [
+      {
+        "src": "/images/my_emoji.png",
+        "alt": "계속 공부 중인 서민정 퍼블리셔"
+      }
+    ],
+    "skillName": "계속해서 늘려나갈 예정입니다.",
+    "descriptions": [],
+    "isSpecial": true,
+    "specialDesc": "배움은 계속됩니다.",
+    "specialIcon": {
+      "src": "/images/my_emoji_back.png",
+      "alt": "robots"
+    }
+  }
+]
