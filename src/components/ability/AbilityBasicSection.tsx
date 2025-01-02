@@ -8,7 +8,8 @@ const AbilityBasicSection = () => {
       <Category title="업무수행역량"/>
       <div className="ability_basic_wrapper">
         <div className="container">
-          <AbilityList />
+          <AbilityList/>
+
           {/*<ul>*/}
           {/*  <li className="on">*/}
           {/*    <div className="tt_line f_b_c">*/}
