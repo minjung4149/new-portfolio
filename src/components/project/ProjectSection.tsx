@@ -1,7 +1,7 @@
 'use client';
 import React, {useEffect, useState} from 'react';
 import Category from "@/components/Category";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/project/ProjectCard";
 
 interface ProjectData {
   imageSrc: string;
@@ -21,7 +21,7 @@ async function fetchProjects(): Promise<ProjectData[]> {
   return res.json();
 }
 
-const Project: React.FC = () => {
+const ProjectSection: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
   const lastRowStartIndex = Math.floor((projects.length - 1) / 3) * 3;
 
@@ -60,4 +60,4 @@ const Project: React.FC = () => {
   );
 }
 
-export default Project;
+export default ProjectSection;

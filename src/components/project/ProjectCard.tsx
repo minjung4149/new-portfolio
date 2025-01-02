@@ -23,7 +23,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({imageSrc, imageAlt, link, titl
               <img src="/images/onclick.svg" alt={title}/>
             </div>
           </div>
-          <p className="desc">{description}</p>
+          {/*<p className="desc">{description}</p>*/}
+          <p
+            className="desc"
+            dangerouslySetInnerHTML={{
+              __html: description.replace(/\n/g, "<br/>"), // \n을 <br>로 변환
+            }}
+          ></p>
         </a>
       </div>
     </>

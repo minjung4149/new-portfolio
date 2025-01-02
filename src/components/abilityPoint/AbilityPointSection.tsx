@@ -1,6 +1,6 @@
 import React from 'react';
 import Category from "@/components/Category";
-import AbilityItem from "@/components/AbilityItem";
+import AbilityItem from "@/components/abilityPoint/AbilityItem";
 
 const abilities = [
   {
@@ -20,7 +20,7 @@ const abilities = [
   },
 ];
 
-const AbilityPoint = () => {
+const AbilityPointSection = () => {
   return (
     <section id="ability_point">
       <Category title="핵심역량"/>
@@ -51,4 +51,4 @@ const AbilityPoint = () => {
   );
 }
 
-export default AbilityPoint;
+export default AbilityPointSection;

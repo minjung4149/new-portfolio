@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillCard from "@/components/SkillCard";
+import SkillCard from "@/components/skill/SkillCard";
 
 interface SkillProps {
   icons: { src: string; alt: string }[];
@@ -19,7 +19,7 @@ async function fetchSkills(): Promise<SkillProps[]> {
   return res.json();
 }
 
-const Skill: React.FC = async () => {
+const SkillSection: React.FC = async () => {
   const skills = await fetchSkills();
 
   return (
@@ -57,4 +57,4 @@ const Skill: React.FC = async () => {
   );
 }
 
-export default Skill;
+export default SkillSection;
