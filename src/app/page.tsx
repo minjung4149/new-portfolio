@@ -1,5 +1,4 @@
 import Header from "@/components/header/Header";
-import Category from "@/components/Category";
 import BackToTopButton from "@/components/BackToTopButton";
 import AboutSection from "@/components/about/AboutSection";
 import AbilityPointSection from "@/components/abilityPoint/AbilityPointSection";

@@ -1,6 +1,21 @@
+"use client";
 import React from 'react';
+import Button from "@/components/Button";
 
 const ContactSection = () => {
+  const buttons = [
+    {
+      className: "orange",
+      label: "이력서 바로가기",
+      url: "http://kirakira4149.dothome.co.kr/resume_minjung.pdf",
+    },
+    {
+      className: "white",
+      label: "깃허브 바로가기",
+      url: "https://github.com/minjung4149",
+    },
+  ];
+
   return (
     <section id="contact">
       <div className="container">
@@ -12,16 +27,16 @@ const ContactSection = () => {
           watching :&#41;
         </h3>
         <div className="btn_area">
-          {/*<button className="orange"*/}
-          {/*        onClick="window.open('http://kirakira4149.dothome.co.kr/resume_minjung.pdf')">이력서*/}
-          {/*  바로가기*/}
-          {/*</button>*/}
-          {/*<button className="white" onClick="window.open('https://github.com/minjung4149')">*/}
-          {/*  깃허브 바로가기*/}
-          {/*</button>*/}
-
-          <button className="orange">이력서 바로가기</button>
-          <button className="white">깃허브 바로가기</button>
+          {buttons.map((button, index) => (
+            <Button
+              key={index}
+              className={button.className}
+              label={button.label}
+              onClick={() =>
+                window.open(button.url, "_blank", "noopener,noreferrer")
+              }
+            />
+          ))}
         </div>
       </div>
     </section>
