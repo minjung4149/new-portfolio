@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useRef, useState, useEffect} from "react";
 
 interface AbilityItemProps {
   title: string;
   details: string;
   gradient: "left" | "right";
   isExpanded: boolean;
+  onToggle: () => void;
 }
 
 const AbilityItem: React.FC<AbilityItemProps> = ({
@@ -12,10 +13,23 @@ const AbilityItem: React.FC<AbilityItemProps> = ({
                                                    details,
                                                    gradient,
                                                    isExpanded,
+                                                   onToggle,
                                                  }) => {
+  const detailsRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number>(0);
+
+  // 애니메이션 효과를 위해 높이 계산
+  useEffect(() => {
+    if (isExpanded) {
+      setHeight(detailsRef.current?.scrollHeight || 0);
+    } else {
+      setHeight(0);
+    }
+  }, [isExpanded]);
+
   return (
     <li className={isExpanded ? "on" : ""}>
-      <div className="tt_line f_b_c">
+      <div className="tt_line f_b_c" onClick={onToggle}>
         <p className="tt">{title}</p>
         <div className="arrow">
           <img
@@ -25,12 +39,17 @@ const AbilityItem: React.FC<AbilityItemProps> = ({
         </div>
       </div>
       <div
+        ref={detailsRef}
         className="details"
+        style={{
+          maxHeight: `${height}px`,
+          overflow: "hidden",
+          transition: "max-height 0.3s ease",
+        }}
         dangerouslySetInnerHTML={{
-          __html: `<p>${details.replace(/\n/g, "<br/>")}</p>`, // p 태그를 포함시켜 스타일 적용 가능
+          __html: `<p>${details.replace(/\n/g, "<br/>")}</p>`,
         }}
       ></div>
-
       <span className={`gradient_line ${gradient}`}></span>
     </li>
   );

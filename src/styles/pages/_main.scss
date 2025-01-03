@@ -433,7 +433,14 @@ section {
         }
 
         .details {
-          display: none;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease, padding 0.3s ease;
+
+          h3 {
+            @include font-variable($font-xxl + 2, $bold);
+            margin-bottom: 16px;
+          }
 
           p {
             @include font-variable($font-m, $medium);
