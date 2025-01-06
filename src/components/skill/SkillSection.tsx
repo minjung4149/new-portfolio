@@ -1,5 +1,7 @@
-import React from 'react';
+'use client';
+import React, {useEffect, useState} from 'react';
 import SkillCard from "@/components/skill/SkillCard";
+import {fetchData} from '@/utils/api';
 
 interface SkillProps {
   icons: { src: string; alt: string }[];
@@ -10,17 +12,21 @@ interface SkillProps {
   specialIcon?: { src: string; alt: string };
 }
 
-async function fetchSkills(): Promise<SkillProps[]> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '';
-  const res = await fetch(`${baseUrl}/data/skills.json`, {cache: 'no-store'});
-  if (!res.ok) {
-    throw new Error('Failed to fetch skills data');
-  }
-  return res.json();
-}
+const SkillSection: React.FC = () => {
+  const [skills, setSkills] = useState<SkillProps[]>([]);
 
-const SkillSection: React.FC = async () => {
-  const skills = await fetchSkills();
+  useEffect(() => {
+    const loadSkills = async () => {
+      try {
+        const data = await fetchData<SkillProps[]>('/data/skills.json');
+        setSkills(data);
+      } catch (error) {
+        console.error('Error loading skills:', error);
+      }
+    };
+
+    loadSkills();
+  }, []);
 
   return (
     <section id="skill">

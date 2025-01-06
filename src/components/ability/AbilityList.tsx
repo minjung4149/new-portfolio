@@ -1,6 +1,7 @@
 'use client';
 import React, {useEffect, useState} from "react";
 import AbilityItem from "./AbilityItem";
+import {fetchData} from '@/utils/api';
 
 interface Ability {
   title: string;
@@ -12,22 +13,18 @@ interface Ability {
 const AbilityList: React.FC = () => {
   const [abilities, setAbilities] = useState<Ability[]>([]);
 
-  // JSON 데이터를 가져오는 함수
-  const fetchAbilityData = async () => {
-    try {
-      const response = await fetch("/data/ability.json");
-      if (!response.ok) {
-        throw new Error("데이터를 가져오는 데 실패했습니다.");
-      }
-      const data = await response.json();
-      setAbilities(data);
-    } catch (error) {
-      console.error("에러 발생:", error);
-    }
-  };
-
   useEffect(() => {
-    fetchAbilityData();
+    // JSON 데이터를 가져오는 함수
+    const loadAbilities = async () => {
+      try {
+        const data = await fetchData<Ability[]>('/data/ability.json');
+        setAbilities(data);
+      } catch (error) {
+        console.error('Error loading abilities:', error);
+      }
+    };
+
+    loadAbilities();
   }, []);
 
   // 아코디언 토글 함수

@@ -2,6 +2,7 @@
 import React, {useEffect, useState} from 'react';
 import Category from "@/components/Category";
 import ProjectCard from "@/components/project/ProjectCard";
+import {fetchData} from '@/utils/api';
 
 interface ProjectData {
   imageSrc: string;
@@ -29,7 +30,7 @@ const ProjectSection: React.FC = () => {
   useEffect(() => {
     const loadProjects = async () => {
       try {
-        const data = await fetchProjects();
+        const data = await fetchData<ProjectData[]>('/data/projects.json');
         setProjects(data);
       } catch (error) {
         console.error('Error loading projects:', error);
