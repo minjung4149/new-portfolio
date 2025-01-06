@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import Category from "@/components/Category";
 import AbilityItem from "@/components/abilityPoint/AbilityItem";
 
@@ -7,17 +7,17 @@ const abilities = [
   {
     imageSrc: '/images/ability_communication.png',
     altText: '커뮤니케이션 능력',
-    description: '협업 작업에서 빛을 발휘할 <br/>커뮤니케이션 능력',
+    description: '협업 과정에서 빛을 발휘할 <br/>커뮤니케이션 능력',
   },
   {
     imageSrc: '/images/ability_graphic.png',
-    altText: '그래픽소프트웨어 활용 능력',
-    description: 'Photoshop, Figma <br/>그래픽소프트웨어 활용 능력',
+    altText: '디자인 협업과 구현 능력',
+    description: 'Figma를 활용한 디자인 협업 및 <br/>디자인 시스템 기반의 UI 구현 능력',
   },
   {
     imageSrc: '/images/ability_coding.png',
-    altText: '코딩 구현 능력',
-    description: 'UI/UX를 바탕으로 한 <br/>코딩 구현 능력',
+    altText: '프론트엔드 개발 능력',
+    description: 'React, TypeScript, SCSS를 활용한 <br/>프론트엔드 개발 능력',
   },
 ];
 
