@@ -1,7 +1,6 @@
 import React from "react";
 import '@/styles/style.scss';
 import HeadContent from "@/components/HeadContent";
-// import 'react-toastify/dist/ReactToastify.css';
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
 

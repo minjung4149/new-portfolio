@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from "react";
 import Category from "@/components/Category";
 import AbilityItem from "@/components/abilityPoint/AbilityItem";
 
@@ -21,13 +22,33 @@ const abilities = [
 ];
 
 const AbilityPointSection = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      const abilityPointElement = document.getElementById("ability_point");
+      const abilityPointOST = abilityPointElement?.offsetTop || 0;
+      const abilityPointUl = abilityPointElement?.querySelector("ul");
+
+      if (abilityPointOST - 700 < currentScroll && abilityPointUl) {
+        abilityPointUl.classList.add("active");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section id="ability_point">
       <Category title="핵심역량"/>
 
       <div className="container">
         <div className="contents">
-          <ul className="active">
+          <ul>
             {abilities.map((ability, index) => (
               <React.Fragment key={index}>
                 <AbilityItem

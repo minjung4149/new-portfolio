@@ -4,7 +4,6 @@ import {initLottieAnimation} from "@/utils/lottieAnimation";
 
 const BackToTopButton = () => {
   useEffect(() => {
-
     const handleScroll = () => {
       const backToTopButton = document.getElementById("back-to-top");
       if (!backToTopButton) return;
@@ -21,14 +20,14 @@ const BackToTopButton = () => {
       window.scrollTo({top: 0, behavior: "smooth"});
     };
 
-    // 로티 애니메이션 초기화
     initLottieAnimation("lottie-pop");
 
     window.addEventListener("scroll", handleScroll);
+
     const backToTopButton = document.getElementById("back-to-top");
     backToTopButton?.addEventListener("click", handleClick);
 
-    // Cleanup event listeners
+    // 컴포넌트 언마운트 시 이벤트 핸들러를 제거하여 메모리 누수를 방지
     return () => {
       window.removeEventListener("scroll", handleScroll);
       backToTopButton?.removeEventListener("click", handleClick);
