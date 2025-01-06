@@ -23,7 +23,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({imageSrc, imageAlt, link, titl
               <img src="/images/onclick.svg" alt={title}/>
             </div>
           </div>
-          {/*<p className="desc">{description}</p>*/}
           <p
             className="desc"
             dangerouslySetInnerHTML={{

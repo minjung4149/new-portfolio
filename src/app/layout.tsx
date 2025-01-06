@@ -1,6 +1,5 @@
 import React from "react";
 import '@/styles/style.scss';
-import HeadContent from "@/components/HeadContent";
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
 
@@ -19,7 +18,6 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
       <meta property="og:image" content="http://kirakira4149.dothome.co.kr/seo/opengraph_.jpg"/>
       <meta property="og:title" content="일 잘하는 웹퍼블리셔 서민정"/>
       <meta property="og:description" content="4년차 웹퍼블리셔 포트폴리오 사이트입니다."/>
-      <HeadContent/>
     </head>
     <body>
     {children}

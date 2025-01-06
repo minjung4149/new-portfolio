@@ -32,10 +32,15 @@ const AbilityList: React.FC = () => {
 
   // 아코디언 토글 함수
   const handleToggle = (index: number) => {
+    // 이전 상태의 abilities 배열을 기반으로 새로운 상태를 생성
     setAbilities((prevAbilities) =>
       prevAbilities.map((ability, i) => ({
-        ...ability,
+        ...ability, // 기존 ability의 나머지 속성은 유지
         isExpanded: i === index ? !ability.isExpanded : false,
+        /**
+         * - 클릭된 항목의 경우, 현재 상태를 반전시킴 (true -> false, false -> true).
+         * - 클릭되지 않은 항목의 경우, isExpanded를 false로 설정하여 닫힘 상태 유지.
+         */
       }))
     );
   };

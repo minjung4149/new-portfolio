@@ -23,6 +23,7 @@ async function fetchProjects(): Promise<ProjectData[]> {
 
 const ProjectSection: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
+  // 프로젝트 배열에서 마지막 행의 시작 인덱스를 계산
   const lastRowStartIndex = Math.floor((projects.length - 1) / 3) * 3;
 
   useEffect(() => {

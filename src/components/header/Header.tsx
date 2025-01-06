@@ -77,7 +77,7 @@ const Header = () => {
               className="orange"
               label="이력서 바로가기"
               onClick={() =>
-                window.open("http://kirakira4149.dothome.co.kr/resume_minjung.pdf", "_blank")
+                window.open("http://kirakira4149.dothome.co.kr/resume_minjung.pdf", "_blank", "noopener,noreferrer")
               }
             />
           </div>
