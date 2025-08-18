@@ -213,12 +213,12 @@ section {
     .card_wrpper {
       @include flex-wrap;
       justify-content: space-between;
-      gap: 34px;
+      gap: 25px;
       width: 74.71%;
 
       li {
         &.card {
-          width: 31%;
+          width: 31.5%;
           height: 328px;
           position: relative;
           perspective: 600px;
@@ -236,7 +236,7 @@ section {
               width: 100%;
               background: rgba(255, 255, 255, 0.1);
               border-radius: 12px;
-              padding: 38px;
+              padding: 27px;
               box-sizing: border-box;
               overflow: hidden;
               backface-visibility: hidden;
