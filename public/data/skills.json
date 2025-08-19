@@ -28,8 +28,7 @@
     "descriptions": [
       "애니메이션과 트랜지션을 활용한 인터랙션 구현",
       "미디어쿼리를 통한 적응형·반응형 웹페이지 제작",
-      "SCSS 변수를 활용한 테마화 및 재사용 가능한 스타일 관리",
-      "Flexbox와 Grid를 이용한 레이아웃 설계"
+      "SCSS 변수를 활용한 테마화 및 재사용 가능한 스타일 관리"
     ]
   },
   {
@@ -51,9 +50,12 @@
         "alt": "javascript"
       }
     ],
-    "skillName": "Javascript",
+    "skillName": "Javascript / TypeScript",
     "descriptions": [
-      "선택자, this, If문, for문 등 javascript에서 자주 쓰이는 기본적인 문법 활용"
+      "선택자, this, if문, for문 등 자주 쓰이는 기본 문법 활용",
+      "setTimeout, setInterval을 통한 비동기 처리",
+      "TypeScript의 기본 타입 정의",
+      "React Props 타입 지정 등 실무 적용 경험"
     ]
   },
   {
@@ -65,7 +67,10 @@
     ],
     "skillName": "React",
     "descriptions": [
-      "컴포넌트 분리, Router, useState, useEffect, useRef 등의 기초적인 지식 보유 및 활용"
+      "컴포넌트 분리 및 재사용, props/state 관리",
+      "Router 기반의 페이지 전환과 조건부 렌더링",
+      "useState, useEffect, useRef 등 주요 React Hook 활용",
+      "Context API 등 기초적인 상태 관리 패턴 이해"
     ]
   },
   {
@@ -97,8 +102,9 @@
     ],
     "skillName": "GitHub / Jira",
     "descriptions": [
-      "형상관리 툴을 이용한 버전관리",
-      "프로젝트 관리"
+      "GitHub을 활용한 브랜치 관리 및 Pull Request 기반 협업",
+      "형상 관리와 이슈 트래킹을 통한 작업 이력 관리",
+      "Jira를 활용한 태스크 관리"
     ]
   },
   {
@@ -110,7 +116,9 @@
     ],
     "skillName": "Chart.js",
     "descriptions": [
-      "커스터마이징 한 디자인으로 차트 구현"
+      "막대, 선, 원형 등 다양한 차트 구현 경험",
+      "옵션 커스터마이징과 디자인 반영을 통한 차트 스타일링",
+      "데이터 연동 및 반응형 차트 구성"
     ]
   },
   {
@@ -122,18 +130,14 @@
     ],
     "skillName": "네이버 지도 API",
     "descriptions": [
-      "행정구역 GeoJSON 데이터 레이어 표시",
-      "열지도 시각화",
-      "마커 커스터마이징",
-      "클릭이벤트"
+      "GeoJSON 기반 행정구역 레이어 표시",
+      "Heatmap(열지도) 시각화",
+      "사용자 정의 마커 커스터마이징",
+      "지도 이벤트 처리(클릭 등)"
     ]
   },
   {
     "icons": [
-      {
-        "src": "/images/skill/icon_s_black.png",
-        "alt": "slick"
-      },
       {
         "src": "/images/skill/icon_s_black.png",
         "alt": "swiper"
@@ -157,7 +161,8 @@
     ],
     "skillName": "Robots.txt / Sitemap.xml",
     "descriptions": [
-      "Robots.txt,Sitemap.xml 제작 및 제출"
+      "Robots.txt를 통한 크롤링 제어",
+      "Sitemap.xml 제작으로 사이트 구조 정의"
     ]
   },
   {
