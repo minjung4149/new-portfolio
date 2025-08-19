@@ -9,11 +9,11 @@ const ContactSection = () => {
       label: "이력서 바로가기",
       url: "http://kirakira4149.dothome.co.kr/resume_minjung.pdf",
     },
-    {
-      className: "white",
-      label: "깃허브 바로가기",
-      url: "https://github.com/minjung4149",
-    },
+    // {
+    //   className: "white",
+    //   label: "깃허브 바로가기",
+    //   url: "https://github.com/minjung4149",
+    // },
   ];
 
   return (

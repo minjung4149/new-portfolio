@@ -374,8 +374,8 @@ section {
           }
 
           .txt {
-            height: 230px;
-            padding: 40px 40px 30px;
+            height: 210px;
+            padding: 27px 40px;
             position: absolute;
             left: 0;
             right: 0;
@@ -395,7 +395,7 @@ section {
             }
 
             .desc {
-              @include font-variable($font-n, $medium);
+              @include font-variable($font-n + 1, $medium);
             }
           }
         }
