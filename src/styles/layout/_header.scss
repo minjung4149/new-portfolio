@@ -38,7 +38,7 @@ header {
       }
 
       button {
-        @include font-variable($font-weight: $bold);
+        @include font-variable($font-n, $bold);
         padding: 10px 16px;
       }
     }

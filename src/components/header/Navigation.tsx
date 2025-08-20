@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from 'react';
 
 interface NavigationProps {
   closeMenu?: () => void;
@@ -8,14 +8,49 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({closeMenu}) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const menuItems = ["About", "Skill", "Project", "Contact"];
+  const sectionIds = ['about', 'skill', 'project', 'contact'];
 
-  const handleScroll = (id: string) => {
+  // 클릭 시 스크롤 이동
+  const handleScroll = (id: string, index: number) => {
     const element = document.getElementById(id);
     if (element) {
-      const top = element.getBoundingClientRect().top + window.scrollY - 76;
-      window.scrollTo({top, behavior: "smooth"});
+      const top = element.getBoundingClientRect().top + window.scrollY - 76; // 헤더 높이 보정
+      window.scrollTo({top, behavior: 'smooth'});
+      setActiveIndex(index); // 클릭한 메뉴를 active 처리
+      if (closeMenu) closeMenu();
     }
   };
+
+  // Intersection Observer로 스크롤 감지
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id, index) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveIndex(index); // 스크롤로 해당 섹션 보이면 activeIndex 갱신
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.3,
+        }
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
 
   return (
     <nav>
@@ -24,11 +59,7 @@ const Navigation: React.FC<NavigationProps> = ({closeMenu}) => {
           <li
             key={index}
             className={activeIndex === index ? "on" : ""}
-            onClick={() => {
-              setActiveIndex(index);
-              handleScroll(item.toLowerCase());
-              if (closeMenu) closeMenu();
-            }}
+            onClick={() => handleScroll(sectionIds[index], index)}
           >
             {item}
           </li>
