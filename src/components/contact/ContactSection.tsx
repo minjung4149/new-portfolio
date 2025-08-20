@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from "next/image";
 import Button from "@/components/Button";
 
 const ContactSection = () => {
@@ -20,7 +21,12 @@ const ContactSection = () => {
     <section id="contact">
       <div className="container">
         <div className="contact_img">
-          <img src="/images/contact.png" alt="이력서 바로가기, 깃허브 바로가기"/>
+          <Image
+            src="/images/contact.png"
+            alt="이력서 바로가기, 깃허브 바로가기"
+            width={220}
+            height={220}
+          />
         </div>
         <h3>
           thank you for <br/>

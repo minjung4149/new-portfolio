@@ -12,16 +12,6 @@ interface ProjectData {
   description: string;
 };
 
-
-async function fetchProjects(): Promise<ProjectData[]> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '';
-  const res = await fetch(`${baseUrl}/data/projects.json`, {cache: 'no-store'});
-  if (!res.ok) {
-    throw new Error('Failed to fetch projects data');
-  }
-  return res.json();
-}
-
 const ProjectSection: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
   // 프로젝트 배열에서 마지막 행의 시작 인덱스를 계산

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -12,6 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({imageSrc, imageAlt, link, titl
   return (
     <>
       <div className="img_wrap">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={imageSrc} alt={imageAlt}/>
       </div>
       <div className="project_desc">
@@ -20,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({imageSrc, imageAlt, link, titl
           <div className="tt_line f_b_c">
             <h3>{title}</h3>
             <div className="onclick_icon">
-              <img src="/images/onclick.svg" alt={title}/>
+              <Image src="/images/onclick.svg" alt={title} width={40} height={40}/>
             </div>
           </div>
           <p

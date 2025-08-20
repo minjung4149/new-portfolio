@@ -1,4 +1,5 @@
 import React, {useRef, useState, useEffect} from "react";
+import Image from "next/image";
 
 interface AbilityItemProps {
   title: string;
@@ -32,9 +33,11 @@ const AbilityItem: React.FC<AbilityItemProps> = ({
       <div className="tt_line f_b_c" onClick={onToggle}>
         <p className="tt">{title}</p>
         <div className="arrow">
-          <img
+          <Image
             src={`/images/arrow_${isExpanded ? "up" : "down"}.svg`}
             alt="토글 버튼"
+            width={40}
+            height={40}
           />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 interface SkillCardProps {
   icons: { src: string; alt: string }[];
@@ -24,7 +25,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
         <div className={icons.length > 1 ? 'icon_wrap' : ''}>
           {icons.map((icon, index) => (
             <div className="icon" key={index}>
-              <img src={icon.src} alt={icon.alt}/>
+              <Image src={icon.src} alt={icon.alt} width={60} height={60}/>
             </div>
           ))}
         </div>
@@ -50,12 +51,12 @@ const SkillCard: React.FC<SkillCardProps> = ({
             <div className={icons.length > 1 ? 'icon_wrap' : ''}>
               {isSpecial && specialIcon ? (
                 <div className="icon">
-                  <img src={specialIcon.src} alt={specialIcon.alt}/>
+                  <Image src={specialIcon.src} alt={specialIcon.alt} width={140} height={140}/>
                 </div>
               ) : (
                 icons.map((icon, index) => (
                   <div className="icon" key={index}>
-                    <img src={icon.src} alt={icon.alt}/>
+                    <Image src={icon.src} alt={icon.alt} width={85} height={85}/>
                   </div>
                 ))
               )}

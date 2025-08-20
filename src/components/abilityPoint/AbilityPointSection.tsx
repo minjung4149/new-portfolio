@@ -1,5 +1,6 @@
 'use client';
 import React, {useEffect} from "react";
+import Image from "next/image";
 import Category from "@/components/Category";
 import AbilityItem from "@/components/abilityPoint/AbilityItem";
 
@@ -59,7 +60,12 @@ const AbilityPointSection = () => {
                 {index < abilities.length - 1 && (
                   <li className="animation">
                     <div className="also">
-                      <img src="/images/arrow.png" alt="능력 추가"/>
+                      <Image
+                        src="/images/arrow.png"
+                        alt="능력 추가"
+                        width={48}
+                        height={48}
+                      />
                     </div>
                   </li>
                 )}
