@@ -9,6 +9,8 @@ export const initLottieAnimation = (containerId: string) => {
     return;
   }
 
+  container.innerHTML = "";
+
   // 로티 애니메이션 초기화
   bodymovin.loadAnimation({
     container, // 필수, 애니메이션을 렌더링할 DOM 요소

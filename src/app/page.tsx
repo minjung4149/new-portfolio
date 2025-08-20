@@ -1,11 +1,11 @@
 import Header from "@/components/header/Header";
-import BackToTopButton from "@/components/BackToTopButton";
 import AboutSection from "@/components/about/AboutSection";
 import AbilityPointSection from "@/components/abilityPoint/AbilityPointSection";
 import SkillSection from "@/components/skill/SkillSection";
 import AbilityBasicSection from "@/components/ability/AbilityBasicSection";
 import ContactSection from "@/components/contact/ContactSection";
 import ProjectSection from "@/components/project/ProjectSection";
+import ClientOnlyBackToTop from "@/components/ClientOnlyBackToTop";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <ProjectSection/>
         <AbilityBasicSection/>
         <ContactSection/>
-        <BackToTopButton/>
+        <ClientOnlyBackToTop/>
       </main>
     </>
   );
