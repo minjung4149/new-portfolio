@@ -1,8 +1,9 @@
 import bodymovin from "lottie-web";
 
 export const initLottieAnimation = (containerId: string) => {
-  const container = document.getElementById(containerId);
+  if (typeof document === 'undefined') return;
 
+  const container = document.getElementById(containerId);
   if (!container) {
     console.error(`Container with id "${containerId}" not found.`);
     return;
