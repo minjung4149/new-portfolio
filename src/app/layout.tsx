@@ -1,5 +1,5 @@
 import '@/styles/style.scss';
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 
 export const metadata: Metadata = {
   title: '서민정 | 포트폴리오',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '일 잘하는 웹퍼블리셔 서민정',
     description: '5년 차 웹퍼블리셔 서민정의 포트폴리오 사이트입니다. 웹 표준과 최신 기술을 준수하며, 반응형 디자인을 통해 구현된 다양한 프로젝트를 만나보세요.',
-    url: 'http://kirakira4149.dothome.co.kr/seo',
+    url: 'https://mjseo-portfolio.vercel.app/',
     type: 'website',
     images: [
       {
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>
-        {children}
-      </body>
+    <body>
+    {children}
+    </body>
     </html>
   );
 }
