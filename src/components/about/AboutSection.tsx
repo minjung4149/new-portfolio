@@ -15,10 +15,10 @@ const AboutSection = () => {
             <div className="point">
               <p className="strong mb-3">
                 단순히 전달받은 디자인을 구현하는 데 그치지 않고 <br/>
-                기획자·디자이너·개발자와 충분히 논의하며 사용자 만족도를 높이는 마크업을 구현합니다. <br/>
+                기획자, 디자이너, 개발자와 충분히 논의하며 사용자 만족도를 높이는 마크업을 구현합니다. <br/>
               </p>
               <p className="strong">
-                본 포트폴리오는 <em className="text-highlight">React와 TypeScript를 기반으로, Next.js와 SCSS를 활용해 개발</em>되었으며 프론트엔드
+                본 포트폴리오는 <em className="text-highlight">React와 TypeScript를 기반으로 Next.js와 SCSS를 활용해 개발</em>되었으며 프론트엔드
                 기술을 통해 효율적이고 확장 가능한 웹을 설계하고 구현한 경험을
                 담고 있습니다.
               </p>
