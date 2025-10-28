@@ -13,10 +13,6 @@ const AboutSection = () => {
             </h1>
             <span className="gradient_line"></span>
             <div className="point">
-              {/*<p className="strong">*/}
-              {/*  단순히 전달받은 디자인을 구현하는 데 그치지 않고 <br/>*/}
-              {/*  여러 가지 의견을 기획자, 디자이너, 개발자와 충분히 의논하고 협의하여 사용자 만족도를 높이는 마크업을 구현합니다.*/}
-              {/*</p>*/}
               <p className="strong mb-3">
                 단순히 전달받은 디자인을 구현하는 데 그치지 않고 <br/>
                 기획자·디자이너·개발자와 충분히 논의하며 사용자 만족도를 높이는 마크업을 구현합니다. <br/>
